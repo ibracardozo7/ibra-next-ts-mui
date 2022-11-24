@@ -1,9 +1,14 @@
-import Nav from "./Nav"
+import About from "./about"
+import Home from "./home"
+import Portfolio from "./portfolio"
 
 const Index = () => {
+
     return (
         <>
-        <Nav />
+        <Home />
+        <About />
+        <Portfolio />
         </>
     )
 }
