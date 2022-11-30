@@ -1,6 +1,6 @@
-import { ThemeProvider } from '@mui/material'
+import { CssBaseline, ThemeProvider } from '@mui/material'
 import NavBar from '../components/Layout/NavBar'
-import Particles from '../components/Particle'
+import Particles from '../components/Particles'
 import useMode from '../hooks/useMode'
 
 export default function App({ Component, pageProps }) {
@@ -8,10 +8,11 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Particles/>
+        <CssBaseline />
+        <Particles />
         <NavBar mode={mode} toggleMode={toggleMode} />
         <Component {...pageProps} />
-        <Component {...pageProps} />
+        {/* <Component {...pageProps} /> */}
       </ThemeProvider>
     </>
   )
