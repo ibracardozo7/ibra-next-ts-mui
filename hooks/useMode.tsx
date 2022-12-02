@@ -24,39 +24,39 @@ const useMode = () => {
                 xl: 1920,
             },
         },
-        // components: {
-        //     MuiCssBaseline: {
-        //         styleOverrides: `
-        //             html {
-        //                 scroll-behavior: smooth;
-        //                 -webkit-scroll-behavior: smooth;
-        //                 scrollbar-color: ${colorBar} transparent;
-        //                 scrollbar-width: thin;
-        //             }
-        //             ::-webkit-scrollbar {
-        //                 width: 7.5px;
-        //             }
-        //             ::-webkit-scrollbar-track {
-        //                 background: transparent; 
-        //             }
-        //             ::-webkit-scrollbar-thumb {
-        //                 background: ${colorBar};
-        //             }
-        //             ::-webkit-scrollbar-thumb:hover {
-        //                 background: ${colorBarHover};
-        //             }
-        //         `,
-        //     },
-        //     MuiOutlinedInput: {
-        //         styleOverrides: {
-        //             input: {
-        //                 '&:-webkit-autofill': {
-        //                     'WebkitBoxShadow': `0 0 0 100px ${colorInput} inset`,
-        //                 }
-        //             }
-        //         }
-        //     },
-        // },
+        components: {
+            MuiCssBaseline: {
+                styleOverrides: `
+                    html {
+                        scroll-behavior: smooth;
+                        -webkit-scroll-behavior: smooth;
+                        scrollbar-color: ${colorBar} transparent;
+                        scrollbar-width: thin;
+                    }
+                    ::-webkit-scrollbar {
+                        width: 7.5px;
+                    }
+                    ::-webkit-scrollbar-track {
+                        background: transparent; 
+                    }
+                    ::-webkit-scrollbar-thumb {
+                        background: ${colorBar};
+                    }
+                    ::-webkit-scrollbar-thumb:hover {
+                        background: ${colorBarHover};
+                    }
+                `,
+            },
+            MuiOutlinedInput: {
+                styleOverrides: {
+                    input: {
+                        '&:-webkit-autofill': {
+                            'WebkitBoxShadow': `0 0 0 100px ${colorInput} inset`,
+                        }
+                    }
+                }
+            },
+        },
     })
 
     return {
